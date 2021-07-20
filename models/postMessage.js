@@ -1,4 +1,4 @@
-import mongoose from 'mongoose';
+import mongoose from "mongoose";
 
 const postSchema = mongoose.Schema({
   title: String,
@@ -13,9 +13,9 @@ const postSchema = mongoose.Schema({
   createdAt: {
     type: Date,
     default: new Date(),
-  }
+  },
 });
 
-const PostMessage = mongoose.model('PostMessage', postSchema);
+const PostMessage = mongoose.model("PostMessage", postSchema);
 
 export default PostMessage;
